@@ -1,17 +1,17 @@
 #timer{
-  width: 200px;
-  font-size:30px;
-  margin:15px;
+ width: 200px;
+ font-size:30px;
+ margin:15px;
 }
 
 #start, #stop, #reset {
-   border: 1px solid black;
-   padding: 10px;
-   margin: 5px;
-   font-size: 15px;
-   text-align: center;
- }
+ border: 1px solid black;
+ padding: 10px;
+ margin: 5px;
+ font-size: 15px;
+ text-align: center;
+}
  
- #start:hover, #stop:hover, #reset:hover{
-   opacity: 0.5;
- }
+#start:hover, #stop:hover, #reset:hover{
+ opacity: 0.5;
+}
