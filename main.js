@@ -57,10 +57,12 @@ reset.addEventListener('click', () => {
   
 function countUp() {
  const d = new Date(Date.now() - startTime + elapsedTime);
- const sec = Math.floor(d/1000);
+ const hour = String(d.getHours());
+ const min = String(d.getMinutes());
+ const sec = String(d.getSeconds());
  const ms = String(d.getMilliseconds());
 
-timer.textContent = `${Math.floor((sec/10)/10)}:${Math.floor((sec/10)%10)}:${sec%10}:${Math.floor(ms/100)}`;
+timer.textContent = `${hour-9}:${min}:${sec}:${Math.floor(ms/100)}`;
 
 timeoutid = setTimeout(() => {
  countUp();
